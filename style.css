@@ -6,5 +6,66 @@ html, body{
 
 .main{
   background-color: #555;
+  background: url('resources/background.jpg') center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   height: 100%;
+  width: 100%;
+}
+
+.hero_message{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 55px;
+  text-align: center;
+  display: block;
+  background-color: none;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  /*color: rgba(48, 64, 66, 1);*/
+  z-index: 1;
+  margin-bottom: 10px;
+  padding: 0 15px;
+  background-image: linear-gradient(to right, rgba(48, 64, 66, 1), rgba(160, 170, 164, 1));
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+
+
+.name{
+
+}
+
+.button{
+  position: relative;
+  display: block;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: none;
+  text-align: center;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+}
+
+.button a{
+  border: 1px rgba(48, 64, 66, 1) solid;
+  padding: 15px 20px;
+  color: rgba(48, 64, 66, 1);
+  text-decoration: none;
+  transition: all ease-in-out 400ms;
+}
+
+.button:hover a{
+  border: 1px #fff solid;
+  background-color: #fff;
+  mix-blend-mode: exclusion;
+}
+
+.content{
+  height: 1400px;
 }
