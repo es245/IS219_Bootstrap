@@ -8,29 +8,39 @@ html, body{
   background-color: #555;
   background: url('resources/background.jpg') center center no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  height: 100%;
+  background-attachment: none;
   width: 100%;
+}
+
+.ham-menu-button{
+  text-decoration: none;
+}
+
+.ham-menu-button i{
+  padding: 30px;
+  color: #2F5267;
+  transition: color ease-in-out 300ms;
+}
+
+.ham-menu-button:hover i{
+  color: #E3DBC5;
 }
 
 .hero_message{
   font-family: 'Quicksand', sans-serif;
-  font-size: 55px;
+  font-weight: 300;
+  font-size: 75px;
   text-align: center;
+  color: rgba(66,104,111,1);
   display: block;
   background-color: none;
   position: relative;
-  top: 40%;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%, -20%);
+  transform: translate(-50%, -50%);
   /*color: rgba(48, 64, 66, 1);*/
   z-index: 1;
-  margin-bottom: 10px;
-  padding: 0 15px;
-  background-image: linear-gradient(to right, rgba(48, 64, 66, 1), rgba(160, 170, 164, 1));
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  padding: 0 10px;
 }
 
 
@@ -42,7 +52,7 @@ html, body{
 .button{
   position: relative;
   display: block;
-  top: 45%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: none;
@@ -52,18 +62,19 @@ html, body{
   font-size: 25px;
 }
 
-.button a{
-  border: 1px rgba(48, 64, 66, 1) solid;
+.button-inner{
+  border: 1px #2F5267 solid;
+  border-radius: 30px;
   padding: 15px 20px;
-  color: rgba(48, 64, 66, 1);
+  color: #557674;
   text-decoration: none;
-  transition: all ease-in-out 400ms;
+  transition: all ease-in-out 300ms;
 }
 
-.button:hover a{
-  border: 1px #fff solid;
-  background-color: #fff;
-  mix-blend-mode: exclusion;
+.button-inner:hover{
+  color: #E3DBC5;
+  background-color: #2F5267;
+
 }
 
 .content{
