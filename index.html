@@ -14,6 +14,16 @@
 
 <body>
 
+  <div class="ham-menu">
+    <div class="tab-wrap">
+      <a href="www.google.com" class="ham-tab">Home</a>
+      <a href="" class="ham-tab">About</a>
+      <a href="" class="ham-tab">Resume</a>
+      <a href="" class="ham-tab">Contact</a>
+      <a href="" class="ham-tab closer"><i class="fa fa-times fa-4x"></i></a>
+    </div>
+  </div>
+
   <div class="main">
     <a href="#" class="ham-menu-button">
       <i class="fa fa-bars fa-2x"></i>
@@ -24,6 +34,9 @@
 
   <div class="content"></div>
 
+  <footer name="foot">
+
+  </footer>
 </body>
 
 
@@ -37,6 +50,21 @@
     console.log(h);
     $('.main').css('height', h);
 
+    $('.ham-menu-button').click(function(){
+      $('.ham-menu').css('width', '100%');
+    });
+
+    $('.closer').click(function(){
+      $('.ham-menu').css('width', '0%');
+    });
+
+    $(document).on('click', 'a', function(event){
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 500);
+    });
   </script>
 
 </html>
