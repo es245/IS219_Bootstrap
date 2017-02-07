@@ -5,38 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Latest compiled and minified CSS -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Emil Sadikoski</title>
 </head>
 
-<body>
+<body data-spy="scroll">
 
   <div class="ham-menu">
     <div class="tab-wrap">
       <a href="www.google.com" class="ham-tab">Home</a>
-      <a href="" class="ham-tab">About</a>
+      <a href="#foot" class="ham-tab">About</a>
       <a href="" class="ham-tab">Resume</a>
       <a href="" class="ham-tab">Contact</a>
-      <a href="" class="ham-tab closer"><i class="fa fa-times fa-4x"></i></a>
+      <p class="ham-tab closer"><i class="fa fa-times fa-4x"></i></p>
     </div>
   </div>
 
-  <div class="main">
+  <div class="main" data-parallax="scroll" data-image-src="resources/background.jpg" speed="0.1">
     <a href="#" class="ham-menu-button">
       <i class="fa fa-bars fa-2x"></i>
     </a>
+
+    <div class="hero_content">
+      <div class="message">My name is Emil.</div>
+      <a href="#wrapper" class="story_button">Here's my story <i class="fa fa-leaf" style="font-size: 25px;"></i></a>
+    </div>
+    <!--
     <div class="hero_message">My name is Emil.</div>
     <div class="button"><a class="button-inner" href="#">Here's my story <i class="fa fa-leaf"></i></a></div>
+    -->
   </div>
 
-  <div class="content"></div>
+  <div class="wrapper" id="wrapper">
+    <div class="container" >
 
-  <footer name="foot">
+      <div class="row" style="padding-top: 70px;">
+        <div class="col-md-12">
+          <img src="resources/person-flat.png" alt="" class="img-responsive center-block img-circle">
+        </div>
+      </div>
 
-  </footer>
+      <div class="row" style="padding-top: 0px;">
+        <div class="col-md-4 col-sm-12">
+          <div class="info_piece"><div class="info_glyph"><i class="fa fa-code"></i></div><p>I love to <code>&ltcode&gt</code>. Ever since my first adolescent web design class back in high school, I was hooked. I've made it not only my mission, but my passion to learn all about in the ins and outs of web development and design, back-end scripting, database design, and even understanding MVC structures. I've gotten the hang of using some popular web languages which include but are not limited to: HTML5, CSS3, Javascript, PHP, Ruby, and Python.</p></div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="info_piece"><div class="info_glyph"><i class="fa fa-wrench"></i></div><p>Not only do I like coding, but I like to build PC's as well. When I'm not riffling through r/webdesign, I'm over on r/PCmasterrace, watching the latest GPU benchmark videos, or learning how to emulate a Nintendo64 on a RaspberryPi. I've built 3 PC's so far, and nearly all the money I've earned working part-time jobs has one way or another been found to either add more RAM, install an all-in-one water cooler, or upgrade my ancient hard drive to a sleek SSD.</p></div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="info_piece"><div class="info_glyph"><i class="fa fa-linux"></i></div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+        </div>
+      </div>
+
+      <div class="row" style="padding-top: 70px;">
+        <div class="col-md-12">
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%; background-color: #2F5267;">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 
@@ -63,8 +98,31 @@
 
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
-      }, 500);
+      }, 1200);
     });
+
+    /*
+    var list = ["programmer", "designer", "nerd", "lurker", "optimist"];
+    var me = setInterval(whatami, 2000);
+    var y = 0;
+    function whatami(){
+      if(y == 4){
+        y = 0;
+      }
+
+      document.getElementById("whatami").innerHTML = list[y];
+      y++;
+    }
+    */
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="parallax.js-1.4.2/parallax.js"></script>
+  <script type="text/javascript">
+    var h = window.screen.availHeight;
+    console.log(h);
+    $('.main').css('height', h);
+
   </script>
 
 </html>

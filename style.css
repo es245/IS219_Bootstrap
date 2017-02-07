@@ -4,16 +4,26 @@ html, body{
   padding: 0;
 }
 
+
+a, a:hover, a:focus{
+  text-decoration: none;
+}
+
+
 .main{
+  /*
   background-color: #555;
   background: url('resources/background.jpg') center center no-repeat;
   background-size: cover;
   background-attachment: none;
   width: 100%;
+  */
 }
 
 .ham-menu-button{
   text-decoration: none;
+  position: absolute;
+  z-index: 10;
 }
 
 .ham-menu-button i{
@@ -23,7 +33,7 @@ html, body{
 }
 
 .ham-menu-button:hover i{
-  color: #E3DBC5;
+  color: #557674;
 }
 
 .ham-menu{
@@ -34,6 +44,7 @@ html, body{
   z-index: 999;
   transition: all ease-in-out 500ms;
   overflow: hidden;
+  z-index: 999;
 }
 
 .tab-wrap{
@@ -62,34 +73,38 @@ html, body{
   font-size: 20px;
 }
 
-.hero_message{
+.hero_content{
+  background-color: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.message{
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
   font-size: 75px;
   text-align: center;
   color: rgba(66,104,111,1);
-  display: block;
-  background-color: none;
-  position: relative;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /*color: rgba(48, 64, 66, 1);*/
-  z-index: 1;
-  padding: 0 10px;
+  margin-bottom: 20px;
+  padding: 0 15px;
 }
 
-.button{
-  position: relative;
-  display: block;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: none;
+.story_button{
+  border: 1px #2F5267 solid;
+  border-radius: 5px;
+  padding: 20px;
+  color: #557674;
+  text-decoration: none;
+  transition: all ease-in-out 300ms;
   text-align: center;
-  margin: 0;
   font-family: 'Quicksand', sans-serif;
   font-size: 25px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .button-inner{
@@ -101,17 +116,35 @@ html, body{
   transition: all ease-in-out 300ms;
 }
 
-.button-inner:hover{
+.story_button:hover{
   color: #E3DBC5;
   background-color: #2F5267;
 
 }
 
-.content{
+.wrapper{
   height: 1400px;
 }
 
-footer{
-  background-color: pink;
-  height: 20px;
+.intro_message{
+  padding: 20px 0;
+  font-size: 50px;
+}
+
+.info_piece{
+
+  border-radius: 10px;
+  padding: 0px;
+  margin: 10px 0;
+}
+
+.info_glyph{
+  text-align: center;
+  font-size: 70px;
+  color: #2F5267;
+  padding: 15px 0;
+}
+
+.info_piece p{
+  text-align: center;
 }
