@@ -4,73 +4,48 @@ html, body{
   padding: 0;
 }
 
+*{
+  font-family: "Quicksand";
+}
 
 a, a:hover, a:focus{
   text-decoration: none;
-}
-
-
-.main{
-  /*
-  background-color: #555;
-  background: url('resources/background.jpg') center center no-repeat;
-  background-size: cover;
-  background-attachment: none;
-  width: 100%;
-  */
-}
-
-.ham-menu-button{
-  text-decoration: none;
-  position: absolute;
-  z-index: 10;
-}
-
-.ham-menu-button i{
-  padding: 30px;
-  color: #2F5267;
-  transition: color ease-in-out 300ms;
-}
-
-.ham-menu-button:hover i{
-  color: #557674;
-}
-
-.ham-menu{
-  width: 0%;
-  height: 100%;
-  background-color: #2F5267;
-  position: fixed;
-  z-index: 999;
-  transition: all ease-in-out 500ms;
-  overflow: hidden;
-  z-index: 999;
-}
-
-.tab-wrap{
-  background-color: none;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.ham-tab{
-  display: block;
-  font-size: 45px;
-  text-align: center;
-  text-decoration: none;
-  color: #BEBFB4;
-  padding: 15px 0px;
-  font-family: 'Quicksand';
-  transition: color ease 300ms;
-}
-
-.ham-tab:hover{
   color: #fff;
 }
 
-.closer{
-  font-size: 20px;
+.push-top{
+  padding: 70px 25px 0;
+  text-align: justify;
+}
+
+@font-face {
+  font-family: Old Growth;
+  src: url('resources/fonts/OldGrowth-Regular.otf');
+}
+
+.top-nav{
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+  background-color: #fff;
+}
+
+.top-nav>a{
+  font-size: 15px;
+  font-family: "Quicksand", Helvetica, sans-serif;
+  font-weight: 300;
+  padding: 5px 15px;
+  float: left;
+  color: #8CC06F;
+  margin: 10px 0;
+}
+
+.main{
+  width: 100%;
+  background-size: cover;
 }
 
 .hero_content{
@@ -86,16 +61,16 @@ a, a:hover, a:focus{
   font-weight: 300;
   font-size: 75px;
   text-align: center;
-  color: rgba(66,104,111,1);
+  color: #fff;
   margin-bottom: 20px;
   padding: 0 15px;
 }
 
 .story_button{
-  border: 1px #2F5267 solid;
+  border: 1px #fff solid;
   border-radius: 5px;
   padding: 20px;
-  color: #557674;
+  color: #fff;
   text-decoration: none;
   transition: all ease-in-out 300ms;
   text-align: center;
@@ -117,8 +92,8 @@ a, a:hover, a:focus{
 }
 
 .story_button:hover{
-  color: #E3DBC5;
-  background-color: #2F5267;
+  color: #53914C;
+  background-color: #fff;
 
 }
 
@@ -126,25 +101,8 @@ a, a:hover, a:focus{
   height: 1400px;
 }
 
-.intro_message{
-  padding: 20px 0;
-  font-size: 50px;
-}
-
-.info_piece{
-
-  border-radius: 10px;
-  padding: 0px;
-  margin: 10px 0;
-}
-
-.info_glyph{
-  text-align: center;
-  font-size: 70px;
-  color: #2F5267;
-  padding: 15px 0;
-}
-
-.info_piece p{
-  text-align: center;
+.divider{
+  height: 5px;
+  width: 100%;
+  background-color: #8CC06F;
 }
