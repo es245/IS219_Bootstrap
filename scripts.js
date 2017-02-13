@@ -28,3 +28,5 @@ $(function() {
     }
   });
 });
+
+$('#wrapper').popover(options);

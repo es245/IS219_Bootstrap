@@ -106,3 +106,16 @@ a, a:hover, a:focus{
   width: 100%;
   background: linear-gradient(to right, #B3E16B, #53914C)
 }
+
+.img-divider{
+  background: url('https://commons.marymount.edu/jaimephotography/wp-content/uploads/sites/4081/2016/02/College.University.Photography-023.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.img-divider h1{
+  color: #fff;
+  font-size: 65px;
+  padding: 100px 0;
+  text-align: center;
+  background-color: rgba(85, 145, 76, 0.5);
+}
