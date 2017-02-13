@@ -14,7 +14,7 @@ a, a:hover, a:focus{
 }
 
 .push-top{
-  padding: 70px 25px 0;
+  padding: 35px 25px;
   text-align: justify;
 }
 
@@ -98,11 +98,11 @@ a, a:hover, a:focus{
 }
 
 .wrapper{
-  height: 1400px;
+  margin-top: 45px;
 }
 
 .divider{
   height: 5px;
   width: 100%;
-  background-color: #8CC06F;
+  background: linear-gradient(to right, #B3E16B, #53914C)
 }
