@@ -5,7 +5,7 @@ html, body{
 }
 
 *{
-  font-family: "Quicksand";
+  font-family: "Poppins";
 }
 
 a, a:hover, a:focus{
@@ -15,8 +15,50 @@ a, a:hover, a:focus{
 
 .push-top{
   padding: 35px 25px;
-  text-align: justify;
+  text-align: left;
 }
+
+.center-text{
+  text-align: center;
+}
+
+.padded-top{
+  padding: 50px 0 0;
+  margin-top: 10px;
+}
+
+.padded-bottom{
+  padding: 0 0 50px;
+  margin-bottom: 10px;
+}
+
+.padded-sides{
+  padding: 0 85px;
+}
+
+.body-text{
+  font-size: 18px;
+  font-weight: 100;
+  font-family: "Raleway", Verdana, sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.header-text{
+  font-size: 55px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.extra-padded-top{
+  margin-top: 100px;
+}
+
+.align-right{
+  text-align: right;
+}
+
+
 
 @font-face {
   font-family: Old Growth;
@@ -31,6 +73,7 @@ a, a:hover, a:focus{
   transform: translateX(-50%);
   visibility: hidden;
   background-color: #fff;
+  display: none;
 }
 
 .top-nav>a{
@@ -57,8 +100,8 @@ a, a:hover, a:focus{
 }
 
 .message{
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
   font-size: 75px;
   text-align: center;
   color: #fff;
@@ -74,7 +117,8 @@ a, a:hover, a:focus{
   text-decoration: none;
   transition: all ease-in-out 300ms;
   text-align: center;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
   font-size: 25px;
   display: inline-block;
   position: relative;
@@ -98,7 +142,7 @@ a, a:hover, a:focus{
 }
 
 .wrapper{
-  margin-top: 45px;
+
 }
 
 .divider{
@@ -118,4 +162,14 @@ a, a:hover, a:focus{
   padding: 100px 0;
   text-align: center;
   background-color: rgba(85, 145, 76, 0.5);
+}
+
+@media only screen and (max-width:992px) {
+  .padded-sides{
+    padding: 0 25px;
+  }
+
+  .header-text{
+    font-size: 43px;
+  }
 }
