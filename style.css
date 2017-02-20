@@ -23,17 +23,20 @@ a, a:hover, a:focus{
 }
 
 .padded-top{
-  padding: 50px 0 0;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .padded-bottom{
-  padding: 0 0 50px;
+  padding-bottom: 50px;
   margin-bottom: 10px;
 }
 
 .padded-sides{
   padding: 0 85px;
+}
+
+.padded-box{
+  padding: 45px 15px;
 }
 
 .body-text{
@@ -47,7 +50,11 @@ a, a:hover, a:focus{
 .header-text{
   font-size: 55px;
   margin: 0;
-  padding: 10px 0;
+  padding: 5px 0;
+}
+
+.white-text{
+  color: #fff;
 }
 
 .extra-padded-top{
@@ -58,6 +65,14 @@ a, a:hover, a:focus{
   text-align: right;
 }
 
+.bottom-border{
+  border-bottom: 2px #CDABCE solid;
+  padding-bottom: 10px;
+}
+
+.push-down{
+  margin-top: 50px;
+}
 
 
 @font-face {
@@ -136,7 +151,7 @@ a, a:hover, a:focus{
 }
 
 .story_button:hover{
-  color: #53914C;
+  color: #542B6A;
   background-color: #fff;
 
 }
@@ -146,23 +161,25 @@ a, a:hover, a:focus{
 }
 
 .divider{
-  height: 5px;
+  height: 4px;
   width: 100%;
-  background: linear-gradient(to right, #B3E16B, #53914C)
+  background: linear-gradient(to left, #CDABCE, #542B6A);
+  margin: 10px 0;
 }
 
 .img-divider{
-  background: url('https://commons.marymount.edu/jaimephotography/wp-content/uploads/sites/4081/2016/02/College.University.Photography-023.jpg') center center no-repeat;
-  background-size: cover;
+
 }
 
-.img-divider h1{
-  color: #fff;
-  font-size: 65px;
-  padding: 100px 0;
-  text-align: center;
-  background-color: rgba(85, 145, 76, 0.5);
+.color-change{
+  transition: all 400ms ease-in-out;
 }
+
+.color-change:hover{
+  background-color: #934C8E;
+  color: #fff;
+}
+
 
 @media only screen and (max-width:992px) {
   .padded-sides{
