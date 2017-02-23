@@ -26,6 +26,10 @@ a, a:hover, a:focus{
   margin-top: 50px;
 }
 
+.top-pad{
+  padding-top: 50px;
+}
+
 .padded-bottom{
   padding-bottom: 50px;
   margin-bottom: 10px;
@@ -76,6 +80,11 @@ a, a:hover, a:focus{
 .bottom-border{
   border-bottom: 1px #ddd solid;
   padding-bottom: 10px;
+}
+
+.img-border{
+  border: 8px #fff solid;
+  border-radius: 100%;
 }
 
 .push-down{
@@ -173,6 +182,13 @@ a, a:hover, a:focus{
 
 }
 
+.profile-pic{
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .divider{
   height: 4px;
   width: 100%;
@@ -185,7 +201,9 @@ a, a:hover, a:focus{
 }
 
 .color-change{
-  transition: all 400ms ease-in-out;
+  transition: all 350ms ease-in-out;
+  border: 1px #934C8E solid;
+  cursor: default;
 }
 
 .color-change:hover{
@@ -212,6 +230,7 @@ a, a:hover, a:focus{
   margin: auto;
   border-radius: 5px;
   background-color: #e2e2e2;
+  box-shadow: inset 2px 2px 2px #ccc;
 }
 
 .prog{
@@ -219,6 +238,48 @@ a, a:hover, a:focus{
   height: 100%;
   border-radius: 5px 0px 0px 5px;
   background: linear-gradient(to left, #CDABCE, #934C8E, #301955);
+}
+
+.contact-input{
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  border-radius: 6px;
+  border: none;
+  padding: 5px 10px;
+
+}
+
+.contact-submit{
+  display: block;
+  width: 30%;
+  margin: 25px auto;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 10px;
+  background-color: transparent;
+  border: 1px #fff solid;
+}
+
+.contact-input:focus{
+  outline: none;
+}
+
+.contact-message{
+  resize: vertical;
+}
+
+.container-dark{
+  background: linear-gradient(to right, #121143, #301955, #5E306E, #934C8E, #CDABCE);
+}
+
+form > label{
+  margin-top: 5px;
+}
+
+.foot{
+  background: #263238;
+  height: 400px;
 }
 
 
