@@ -32,7 +32,11 @@ a, a:hover, a:focus{
 }
 
 .padded-sides{
-  padding: 0 85px;
+  padding: 0 35px;
+}
+
+.extra-padded-sides{
+  padding: 0 45px;
 }
 
 .padded-box{
@@ -50,7 +54,11 @@ a, a:hover, a:focus{
 .header-text{
   font-size: 55px;
   margin: 0;
-  padding: 5px 0;
+  padding: 5px 5px;
+}
+
+.justify-text{
+  text-align: justify;
 }
 
 .white-text{
@@ -107,6 +115,7 @@ a, a:hover, a:focus{
 
 .main{
   width: 100%;
+  height: 100%;
   background-size: cover;
 }
 
@@ -219,7 +228,7 @@ a, a:hover, a:focus{
   }
 
   .header-text{
-    font-size: 43px;
+    font-size: 37px;
   }
 
   .border-right{
@@ -236,5 +245,13 @@ a, a:hover, a:focus{
 
   .bar{
     width: 100%;
+  }
+
+  .message{
+    font-size: 55px;
+  }
+
+  .story_button{
+    font-size: 20px;
   }
 }

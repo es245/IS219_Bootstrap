@@ -11,8 +11,8 @@ $window.scroll(function() {
     }
 });
 
-var h = window.screen.availHeight;
-$('.main').css('height', h);
+//var h = window.screen.availHeight;
+//$('.main').css('height', h);
 
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
